@@ -108,23 +108,12 @@ F 3 "" H 2650 1800 50  0000 C CNN
 	1    2650 1800
 	1    0    0    -1  
 $EndComp
-$Comp
-L device:C C20
-U 1 1 5A872F73
-P 3000 1800
-F 0 "C20" H 3025 1900 50  0000 L CNN
-F 1 "22u" H 3025 1700 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0402" H 3038 1650 50  0001 C CNN
-F 3 "" H 3000 1800 50  0000 C CNN
-	1    3000 1800
-	1    0    0    -1  
-$EndComp
 Text Label 1850 1150 0    60   ~ 0
 PM_ISET
 Text GLabel 3250 2200 3    60   Input ~ 0
 GND
 Text GLabel 3000 1500 0    60   Input ~ 0
-+BAT
++BATT
 Text GLabel 4850 2000 3    60   Input ~ 0
 GND
 Text Notes 3050 2350 2    60   ~ 0
@@ -1277,4 +1266,15 @@ Wire Wire Line
 	6700 5050 6700 5250
 Wire Wire Line
 	5900 5250 6700 5250
+$Comp
+L device:CP1 C20
+U 1 1 5AA6AC37
+P 3000 1800
+F 0 "C20" H 3115 1846 50  0000 L CNN
+F 1 "22uF" H 3115 1755 50  0000 L CNN
+F 2 "roboy_crazyfly:22uF-elektrolyt-kondensator" H 3000 1800 50  0001 C CNN
+F 3 "" H 3000 1800 50  0001 C CNN
+	1    3000 1800
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
