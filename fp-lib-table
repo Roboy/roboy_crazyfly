@@ -20,4 +20,5 @@
   (lib (name roboy_crazyfly)(type KiCad)(uri "$(KIPRJMOD)")(options "")(descr ""))
   (lib (name MPU9250)(type KiCad)(uri "$(KIPRJMOD)/MPU9250.pretty")(options "")(descr ""))
   (lib (name SC)(type KiCad)(uri "$(KIPRJMOD)/SC.pretty")(options "")(descr ""))
+  (lib (name Housings_DFN_QFN)(type KiCad)(uri "$(KIPRJMOD)/Housings_DFN_QFN.pretty")(options "")(descr ""))
 )

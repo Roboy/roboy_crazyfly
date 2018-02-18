@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name roboy_crazyfly-rescue)(type Legacy)(uri ${KIPRJMOD}/roboy_crazyfly-rescue.lib)(options "")(descr ""))
+  (lib (name crazyfly2)(type Legacy)(uri ${KIPRJMOD}/crazyfly2.lib)(options "")(descr ""))
+)

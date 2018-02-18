@@ -1,6 +1,36 @@
-EESchema Schematic File Version 4
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:crazyfly2
 LIBS:roboy_crazyfly-cache
-EELAYER 26 0
+EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -15,7 +45,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L crazyfly2:MPU9250 U3
+L MPU9250 U3
 U 1 1 5A8709D8
 P 5850 2050
 F 0 "U3" H 5500 2600 60  0000 C CNN
@@ -34,7 +64,7 @@ Wire Wire Line
 Wire Wire Line
 	5250 1850 4700 1850
 $Comp
-L device:C C10
+L C C10
 U 1 1 5A870B2D
 P 4300 2700
 F 0 "C10" H 4325 2800 50  0000 L CNN
@@ -45,7 +75,7 @@ F 3 "" H 4300 2700 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L device:C C12
+L C C12
 U 1 1 5A870BBD
 P 4550 2700
 F 0 "C12" H 4575 2800 50  0000 L CNN
@@ -56,7 +86,7 @@ F 3 "" H 4550 2700 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L device:C C14
+L C C14
 U 1 1 5A870BE5
 P 4800 2700
 F 0 "C14" H 4825 2800 50  0000 L CNN
@@ -73,7 +103,7 @@ GND
 Wire Wire Line
 	4300 2850 4300 3000
 Wire Wire Line
-	4150 3000 4300 3000
+	4150 3000 4800 3000
 Wire Wire Line
 	4550 3000 4550 2850
 Connection ~ 4300 3000
@@ -85,16 +115,16 @@ Wire Wire Line
 Wire Wire Line
 	5050 2700 5050 2550
 Wire Wire Line
-	4300 2550 4550 2550
+	4300 2550 5250 2550
 Connection ~ 5050 2550
 Connection ~ 4800 2550
 Connection ~ 4550 2550
 Wire Wire Line
 	4150 2400 4300 2400
 Wire Wire Line
-	4300 2400 4300 2450
+	4300 2400 4300 2550
 Wire Wire Line
-	5250 2450 4800 2450
+	5250 2450 4300 2450
 Connection ~ 4300 2450
 Wire Wire Line
 	5250 1950 4500 1950
@@ -128,7 +158,7 @@ NoConn ~ 6500 2800
 NoConn ~ 6500 2700
 NoConn ~ 6500 2150
 $Comp
-L crazyfly2:LPS25H U4
+L LPS25H U4
 U 1 1 5A87193D
 P 5900 4600
 F 0 "U4" H 5450 5000 60  0000 C CNN
@@ -141,7 +171,7 @@ $EndComp
 Wire Wire Line
 	6500 2250 6850 2250
 Wire Wire Line
-	6850 2250 6850 2450
+	6850 2250 6850 2650
 Wire Wire Line
 	6500 2450 6850 2450
 Connection ~ 6850 2450
@@ -168,7 +198,7 @@ Wire Wire Line
 Wire Wire Line
 	5000 4400 5200 4400
 $Comp
-L device:C C11
+L C C11
 U 1 1 5A871C66
 P 4450 5050
 F 0 "C11" H 4475 5150 50  0000 L CNN
@@ -179,7 +209,7 @@ F 3 "" H 4450 5050 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L device:C C13
+L C C13
 U 1 1 5A871CB6
 P 4700 5050
 F 0 "C13" H 4725 5150 50  0000 L CNN
@@ -192,17 +222,17 @@ $EndComp
 Text GLabel 4450 4650 1    60   Input ~ 0
 VCCA
 Wire Wire Line
-	4450 4650 4450 4800
+	4450 4650 4450 4900
 Wire Wire Line
-	4700 4600 4700 4800
+	4700 4600 4700 4900
 Wire Wire Line
-	4450 4800 4700 4800
+	4450 4800 5200 4800
 Connection ~ 4450 4800
 Wire Wire Line
 	4700 4900 5200 4900
 Connection ~ 4700 4800
 Wire Wire Line
-	5200 4600 5000 4600
+	5200 4600 4700 4600
 Wire Wire Line
 	5200 4500 5000 4500
 Wire Wire Line
@@ -211,7 +241,7 @@ Connection ~ 5000 4600
 Text GLabel 4450 5500 3    60   Input ~ 0
 GND
 Wire Wire Line
-	4450 5200 4450 5350
+	4450 5200 4450 5500
 Wire Wire Line
 	4700 5200 4700 5350
 Wire Wire Line
@@ -222,7 +252,7 @@ GND
 Wire Wire Line
 	6500 4600 6600 4600
 Wire Wire Line
-	6600 4600 6600 4800
+	6600 4600 6600 5100
 Wire Wire Line
 	6500 4800 6600 4800
 Connection ~ 6600 4800
@@ -234,38 +264,4 @@ Text Notes 6350 3350 2    60   ~ 0
 I2C address 1101001b
 Text Notes 6300 5200 2    60   ~ 0
 I2C address 1011101b
-Wire Wire Line
-	4300 3000 4550 3000
-Wire Wire Line
-	4550 3000 4800 3000
-Wire Wire Line
-	5050 2550 5250 2550
-Wire Wire Line
-	4800 2550 5050 2550
-Wire Wire Line
-	4550 2550 4800 2550
-Wire Wire Line
-	4300 2450 4300 2550
-Wire Wire Line
-	4500 2450 4300 2450
-Wire Wire Line
-	4650 2450 4500 2450
-Wire Wire Line
-	4800 2450 4650 2450
-Wire Wire Line
-	6850 2450 6850 2650
-Wire Wire Line
-	4450 4800 4450 4900
-Wire Wire Line
-	4700 4800 4700 4900
-Wire Wire Line
-	4700 4800 5200 4800
-Wire Wire Line
-	5000 4600 4700 4600
-Wire Wire Line
-	4450 5350 4450 5500
-Wire Wire Line
-	6600 4800 6600 4900
-Wire Wire Line
-	6600 4900 6600 5100
 $EndSCHEMATC

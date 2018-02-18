@@ -1,36 +1,6 @@
-EESchema Schematic File Version 2
-LIBS:power
-LIBS:device
-LIBS:transistors
-LIBS:conn
-LIBS:linear
-LIBS:regul
-LIBS:74xx
-LIBS:cmos4000
-LIBS:adc-dac
-LIBS:memory
-LIBS:xilinx
-LIBS:microcontrollers
-LIBS:dsp
-LIBS:microchip
-LIBS:analog_switches
-LIBS:motorola
-LIBS:texas
-LIBS:intel
-LIBS:audio
-LIBS:interface
-LIBS:digital-audio
-LIBS:philips
-LIBS:display
-LIBS:cypress
-LIBS:siliconi
-LIBS:opto
-LIBS:atmel
-LIBS:contrib
-LIBS:valves
-LIBS:crazyfly2
+EESchema Schematic File Version 4
 LIBS:roboy_crazyfly-cache
-EELAYER 25 0
+EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -45,7 +15,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L STM32F405 U1
+L crazyfly2:STM32F405 U1
 U 1 1 5A85B625
 P 5300 2050
 F 0 "U1" H 5050 2500 60  0000 C CNN
@@ -58,7 +28,7 @@ $EndComp
 Text GLabel 3600 5450 3    60   Input ~ 0
 GND
 $Comp
-L C C7
+L device:C C7
 U 1 1 5A85B7A4
 P 3600 4700
 F 0 "C7" H 3625 4800 50  0000 L CNN
@@ -69,7 +39,7 @@ F 3 "" H 3600 4700 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L R R1
+L device:R R1
 U 1 1 5A85B7E9
 P 3900 4700
 F 0 "R1" V 3980 4700 50  0000 C CNN
@@ -80,7 +50,7 @@ F 3 "" H 3900 4700 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C C8
+L device:C C8
 U 1 1 5A85B8C5
 P 4150 4700
 F 0 "C8" H 4175 4800 50  0000 L CNN
@@ -91,7 +61,7 @@ F 3 "" H 4150 4700 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C C9
+L device:C C9
 U 1 1 5A85B920
 P 4350 4700
 F 0 "C9" H 4375 4800 50  0000 L CNN
@@ -120,11 +90,11 @@ Wire Wire Line
 Wire Wire Line
 	4150 4450 4150 4550
 Wire Wire Line
-	3600 5450 3600 4850
+	3600 5450 3600 5300
 Wire Wire Line
 	3900 4850 3900 5300
 Wire Wire Line
-	3600 5300 4350 5300
+	3600 5300 3900 5300
 Connection ~ 3600 5300
 Wire Wire Line
 	4150 5300 4150 4850
@@ -147,7 +117,7 @@ Wire Wire Line
 Wire Wire Line
 	4800 4900 4700 4900
 Wire Wire Line
-	4700 4900 4700 5550
+	4700 4900 4700 5000
 Wire Wire Line
 	4800 5000 4700 5000
 Connection ~ 4700 5000
@@ -163,7 +133,7 @@ Connection ~ 4700 5400
 Wire Wire Line
 	6850 5150 7100 5150
 Wire Wire Line
-	7100 5150 7100 5550
+	7100 5150 7100 5250
 Wire Wire Line
 	6850 5250 7100 5250
 Connection ~ 7100 5250
@@ -243,12 +213,12 @@ Wire Wire Line
 Wire Wire Line
 	4800 3800 4400 3800
 $Comp
-L CRYSTAL_SMD X1
+L roboy_crazyfly-rescue:CRYSTAL_SMD-RESCUE-roboy_crazyfly X1
 U 1 1 5A85D36A
 P 3100 4100
 F 0 "X1" H 3100 4190 50  0000 C CNN
 F 1 "8MHz" H 3130 3990 50  0000 L CNN
-F 2 "roboy_crazyfly:SMD_CRYSTALL" H 3100 4100 50  0001 C CNN
+F 2 "roboy_crazyfly:SMD_CRYSTALL_8MHz" H 3100 4100 50  0001 C CNN
 F 3 "" H 3100 4100 50  0000 C CNN
 	1    3100 4100
 	0    1    1    0   
@@ -349,7 +319,7 @@ STM_SW0
 Text GLabel 7900 2000 3    60   Input ~ 0
 GND
 $Comp
-L 24AA64FT-E/OT U2
+L roboy_crazyfly-rescue:24AA64FT-E_OT-RESCUE-roboy_crazyfly U2
 U 1 1 5A85ECD9
 P 9600 1100
 F 0 "U2" H 9450 1350 60  0000 C CNN
@@ -392,7 +362,7 @@ $EndSheet
 Text GLabel 8450 2000 1    60   Input ~ 0
 VCC
 $Comp
-L R R4
+L device:R R4
 U 1 1 5A85FE8C
 P 8300 2400
 F 0 "R4" V 8380 2400 50  0000 C CNN
@@ -403,7 +373,7 @@ F 3 "" H 8300 2400 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L R R6
+L device:R R6
 U 1 1 5A85FF18
 P 8550 2400
 F 0 "R6" V 8630 2400 50  0000 C CNN
@@ -424,7 +394,7 @@ Wire Wire Line
 Wire Wire Line
 	8300 2250 8300 2100
 Wire Wire Line
-	8300 2100 8550 2100
+	8300 2100 8450 2100
 Wire Wire Line
 	8450 2100 8450 2000
 Wire Wire Line
@@ -443,7 +413,7 @@ Wire Wire Line
 Text Label 11100 2650 2    60   ~ 0
 MPU_INT
 $Comp
-L CONN_01X06 P3
+L crazyfly2:CONN_01X06 P3
 U 1 1 5A860CC9
 P 9150 4000
 F 0 "P3" H 9150 4350 50  0000 C CNN
@@ -454,7 +424,7 @@ F 3 "" H 9150 4000 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L CONN_01X04 P4
+L crazyfly2:CONN_01X04 P4
 U 1 1 5A860DA4
 P 10750 3750
 F 0 "P4" H 10750 4000 50  0000 C CNN
@@ -465,7 +435,7 @@ F 3 "" H 10750 3750 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L CONN_01X10 P5
+L crazyfly2:CONN_01X10 P5
 U 1 1 5A861C5A
 P 10750 4650
 F 0 "P5" H 10750 5200 50  0000 C CNN
@@ -476,7 +446,7 @@ F 3 "" H 10750 4650 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L CONN_01X10 P6
+L crazyfly2:CONN_01X10 P6
 U 1 1 5A861E39
 P 10750 5850
 F 0 "P6" H 10750 6400 50  0000 C CNN
@@ -505,7 +475,7 @@ GND
 Wire Wire Line
 	10550 3900 10050 3900
 Wire Wire Line
-	9500 4200 10550 4200
+	9500 4200 9650 4200
 Wire Wire Line
 	9650 4200 9650 4100
 Text GLabel 9650 4100 2    60   Input ~ 0
@@ -517,7 +487,7 @@ Wire Wire Line
 Wire Wire Line
 	9650 4500 10550 4500
 $Comp
-L R R10
+L device:R R10
 U 1 1 5A862622
 P 9650 4350
 F 0 "R10" V 9730 4350 50  0000 C CNN
@@ -528,7 +498,7 @@ F 3 "" H 9650 4350 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L R R9
+L device:R R9
 U 1 1 5A8626A9
 P 9500 4450
 F 0 "R9" V 9580 4450 50  0000 C CNN
@@ -616,7 +586,7 @@ V_COM_EXP
 Text Label 10050 6300 0    60   ~ 0
 VUSB
 $Comp
-L LED D9
+L roboy_crazyfly-rescue:LED-RESCUE-roboy_crazyfly D9
 U 1 1 5A864CC1
 P 9100 5200
 F 0 "D9" H 9100 5300 50  0000 C CNN
@@ -627,7 +597,7 @@ F 3 "" H 9100 5200 50  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L LED D8
+L roboy_crazyfly-rescue:LED-RESCUE-roboy_crazyfly D8
 U 1 1 5A864DF8
 P 8800 5200
 F 0 "D8" H 8800 5300 50  0000 C CNN
@@ -638,7 +608,7 @@ F 3 "" H 8800 5200 50  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L LED D7
+L roboy_crazyfly-rescue:LED-RESCUE-roboy_crazyfly D7
 U 1 1 5A864E4F
 P 8300 5200
 F 0 "D7" H 8300 5300 50  0000 C CNN
@@ -649,7 +619,7 @@ F 3 "" H 8300 5200 50  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L LED D6
+L roboy_crazyfly-rescue:LED-RESCUE-roboy_crazyfly D6
 U 1 1 5A864EB6
 P 8000 5200
 F 0 "D6" H 8000 5300 50  0000 C CNN
@@ -660,7 +630,7 @@ F 3 "" H 8000 5200 50  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L LED D5
+L roboy_crazyfly-rescue:LED-RESCUE-roboy_crazyfly D5
 U 1 1 5A865331
 P 7550 5900
 F 0 "D5" H 7550 6000 50  0000 C CNN
@@ -677,7 +647,7 @@ VCC
 Text GLabel 7550 6100 3    60   Input ~ 0
 GDN
 $Comp
-L R R2
+L device:R R2
 U 1 1 5A865527
 P 7550 5450
 F 0 "R2" V 7630 5450 50  0000 C CNN
@@ -688,7 +658,7 @@ F 3 "" H 7550 5450 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L R R3
+L device:R R3
 U 1 1 5A8655E5
 P 8000 5650
 F 0 "R3" V 8080 5650 50  0000 C CNN
@@ -699,7 +669,7 @@ F 3 "" H 8000 5650 50  0000 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L R R5
+L device:R R5
 U 1 1 5A865770
 P 8300 5650
 F 0 "R5" V 8380 5650 50  0000 C CNN
@@ -710,7 +680,7 @@ F 3 "" H 8300 5650 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L R R7
+L device:R R7
 U 1 1 5A86584A
 P 8800 5650
 F 0 "R7" V 8880 5650 50  0000 C CNN
@@ -721,7 +691,7 @@ F 3 "" H 8800 5650 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L R R8
+L device:R R8
 U 1 1 5A86590E
 P 9100 5650
 F 0 "R8" V 9180 5650 50  0000 C CNN
@@ -734,7 +704,7 @@ $EndComp
 Wire Wire Line
 	8000 5000 8000 4900
 Wire Wire Line
-	8000 4900 8300 4900
+	8000 4900 8150 4900
 Wire Wire Line
 	8150 4900 8150 4800
 Wire Wire Line
@@ -743,7 +713,7 @@ Connection ~ 8150 4900
 Wire Wire Line
 	8800 5000 8800 4900
 Wire Wire Line
-	8800 4900 9100 4900
+	8800 4900 8950 4900
 Wire Wire Line
 	8950 4900 8950 4800
 Wire Wire Line
@@ -804,7 +774,7 @@ STM_SWIO
 Text Label 8400 4150 0    60   ~ 0
 STM_SWCLK
 $Comp
-L MICRO_B_USB P1
+L crazyfly2:MICRO_B_USB P1
 U 1 1 5A8680FD
 P 800 2500
 F 0 "P1" H 900 2650 60  0000 C CNN
@@ -891,7 +861,7 @@ Wire Wire Line
 Text GLabel 1250 3000 2    60   Input ~ 0
 GND
 $Comp
-L C C1
+L device:C C1
 U 1 1 5A86B0BA
 P 1100 3550
 F 0 "C1" H 1125 3650 50  0000 L CNN
@@ -902,7 +872,7 @@ F 3 "" H 1100 3550 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C C2
+L device:C C2
 U 1 1 5A86B1B2
 P 1350 3550
 F 0 "C2" H 1375 3650 50  0000 L CNN
@@ -913,7 +883,7 @@ F 3 "" H 1350 3550 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C C3
+L device:C C3
 U 1 1 5A86B282
 P 1600 3550
 F 0 "C3" H 1625 3650 50  0000 L CNN
@@ -924,7 +894,7 @@ F 3 "" H 1600 3550 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C C4
+L device:C C4
 U 1 1 5A86B348
 P 1850 3550
 F 0 "C4" H 1875 3650 50  0000 L CNN
@@ -935,7 +905,7 @@ F 3 "" H 1850 3550 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C C5
+L device:C C5
 U 1 1 5A86B433
 P 2200 3550
 F 0 "C5" H 2225 3650 50  0000 L CNN
@@ -946,7 +916,7 @@ F 3 "" H 2200 3550 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C C6
+L device:C C6
 U 1 1 5A86B525
 P 2450 3550
 F 0 "C6" H 2475 3650 50  0000 L CNN
@@ -963,7 +933,7 @@ VCC
 Wire Wire Line
 	1100 3400 1100 3300
 Wire Wire Line
-	1100 3300 2450 3300
+	1100 3300 1350 3300
 Wire Wire Line
 	1800 3300 1800 3200
 Wire Wire Line
@@ -984,7 +954,7 @@ Connection ~ 1350 3300
 Wire Wire Line
 	1100 3700 1100 3850
 Wire Wire Line
-	1100 3850 2450 3850
+	1100 3850 1350 3850
 Wire Wire Line
 	1450 3850 1450 4000
 Wire Wire Line
@@ -1005,7 +975,7 @@ Connection ~ 1350 3850
 Text Notes 2900 3250 2    60   ~ 0
 U1 decoupling:\n100n on each VDD\n10n and 4.7u on VDDA
 $Comp
-L D_Schottky D1
+L device:D_Schottky D1
 U 1 1 5A86C17D
 P 1700 6300
 F 0 "D1" H 1700 6400 50  0000 C CNN
@@ -1016,7 +986,7 @@ F 3 "" H 1700 6300 50  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Q_NMOS_SGD Q1
+L device:Q_NMOS_SGD Q1
 U 1 1 5A88D187
 P 1600 6750
 F 0 "Q1" H 1900 6800 50  0000 R CNN
@@ -1033,7 +1003,7 @@ Wire Wire Line
 Text GLabel 1700 7350 3    60   Input ~ 0
 GND
 Wire Wire Line
-	1700 6950 1700 7350
+	1700 6950 1700 7250
 Wire Wire Line
 	1400 7200 1400 7250
 Wire Wire Line
@@ -1046,10 +1016,10 @@ Wire Wire Line
 Text Label 500  6750 0    60   ~ 0
 MOTOR1
 $Comp
-L R R
+L device:R R30
 U 1 1 5A8927AB
 P 2900 6750
-F 0 "R" V 3000 6750 50  0000 C CNN
+F 0 "R30" V 3000 6750 50  0000 C CNN
 F 1 "100k" V 2900 6750 50  0000 C CNN
 F 2 "Resistors_SMD:R_0402" V 2830 6750 50  0001 C CNN
 F 3 "" H 2900 6750 50  0000 C CNN
@@ -1057,7 +1027,7 @@ F 3 "" H 2900 6750 50  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Q_NMOS_SGD Q2
+L device:Q_NMOS_SGD Q2
 U 1 1 5A8927B7
 P 3350 6750
 F 0 "Q2" H 3650 6800 50  0000 R CNN
@@ -1074,7 +1044,7 @@ Wire Wire Line
 Text GLabel 3450 7350 3    60   Input ~ 0
 GND
 Wire Wire Line
-	3450 6950 3450 7350
+	3450 6950 3450 7250
 Wire Wire Line
 	3150 7200 3150 7250
 Wire Wire Line
@@ -1085,7 +1055,7 @@ Wire Wire Line
 Text Label 2250 6750 0    60   ~ 0
 MOTOR2
 $Comp
-L R R27
+L device:R R27
 U 1 1 5A89389B
 P 4700 7050
 F 0 "R27" V 4780 7050 50  0000 C CNN
@@ -1096,7 +1066,7 @@ F 3 "" H 4700 7050 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Q_NMOS_SGD Q3
+L device:Q_NMOS_SGD Q3
 U 1 1 5A8938A1
 P 4900 6750
 F 0 "Q3" H 5200 6800 50  0000 R CNN
@@ -1113,7 +1083,7 @@ Wire Wire Line
 Text GLabel 5000 7350 3    60   Input ~ 0
 GND
 Wire Wire Line
-	5000 6950 5000 7350
+	5000 6950 5000 7250
 Wire Wire Line
 	4700 7200 4700 7250
 Wire Wire Line
@@ -1124,7 +1094,7 @@ Wire Wire Line
 Text Label 3800 6750 0    60   ~ 0
 MOTOR3
 $Comp
-L R R28
+L device:R R28
 U 1 1 5A8938BD
 P 6450 7050
 F 0 "R28" V 6530 7050 50  0000 C CNN
@@ -1135,7 +1105,7 @@ F 3 "" H 6450 7050 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Q_NMOS_SGD Q4
+L device:Q_NMOS_SGD Q4
 U 1 1 5A8938C3
 P 6650 6750
 F 0 "Q4" H 6950 6800 50  0000 R CNN
@@ -1152,7 +1122,7 @@ Wire Wire Line
 Text GLabel 6750 7350 3    60   Input ~ 0
 GND
 Wire Wire Line
-	6750 6950 6750 7350
+	6750 6950 6750 7250
 Wire Wire Line
 	6450 7200 6450 7250
 Wire Wire Line
@@ -1167,7 +1137,7 @@ GND
 Text GLabel 1600 5000 2    60   Input ~ 0
 +BATT
 $Comp
-L CONN_01X02 P2
+L crazyfly2:CONN_01X02 P2
 U 1 1 5A8963CA
 P 900 4950
 F 0 "P2" H 900 5100 50  0000 C CNN
@@ -1220,12 +1190,12 @@ STM_BOOT0
 Text GLabel 8600 1550 3    60   Input ~ 0
 GND
 $Comp
-L CONN_01X02 P7
+L crazyfly2:CONN_01X02 P7
 U 1 1 5A8AE363
 P 1200 6300
 F 0 "P7" H 1200 6450 50  0000 C CNN
 F 1 "CONN_01X02" V 1300 6300 50  0000 C CNN
-F 2 "Connectors_JST:JST_GH_BM02B-GHS-TBT_02x1.25mm_Straight" H 1200 6300 50  0001 C CNN
+F 2 "roboy_crazyfly:JST-2-pin-female-side" H 1200 6300 50  0001 C CNN
 F 3 "" H 1200 6300 50  0000 C CNN
 	1    1200 6300
 	-1   0    0    1   
@@ -1233,17 +1203,13 @@ $EndComp
 Wire Wire Line
 	1700 6100 1700 6150
 Wire Wire Line
-	1700 6150 1400 6150
-Wire Wire Line
 	1400 6150 1400 6250
 Wire Wire Line
 	1400 6350 1400 6450
 Wire Wire Line
 	1400 6450 1700 6450
-Wire Wire Line
-	1700 6450 1700 6550
 $Comp
-L D_Schottky D2
+L device:D_Schottky D2
 U 1 1 5A8AEEEB
 P 3450 6300
 F 0 "D2" H 3450 6400 50  0000 C CNN
@@ -1256,12 +1222,12 @@ $EndComp
 Text GLabel 3450 6100 1    60   Input ~ 0
 +BATT
 $Comp
-L CONN_01X02 P8
+L crazyfly2:CONN_01X02 P8
 U 1 1 5A8AEEF2
 P 2950 6300
 F 0 "P8" H 2950 6450 50  0000 C CNN
 F 1 "CONN_01X02" V 3050 6300 50  0000 C CNN
-F 2 "Connectors_JST:JST_GH_BM02B-GHS-TBT_02x1.25mm_Straight" H 2950 6300 50  0001 C CNN
+F 2 "roboy_crazyfly:JST-2-pin-female-side" H 2950 6300 50  0001 C CNN
 F 3 "" H 2950 6300 50  0000 C CNN
 	1    2950 6300
 	-1   0    0    1   
@@ -1269,17 +1235,13 @@ $EndComp
 Wire Wire Line
 	3450 6100 3450 6150
 Wire Wire Line
-	3450 6150 3150 6150
-Wire Wire Line
 	3150 6150 3150 6250
 Wire Wire Line
 	3150 6350 3150 6450
 Wire Wire Line
 	3150 6450 3450 6450
-Wire Wire Line
-	3450 6450 3450 6550
 $Comp
-L D_Schottky D3
+L device:D_Schottky D3
 U 1 1 5A8B070F
 P 5000 6300
 F 0 "D3" H 5000 6400 50  0000 C CNN
@@ -1292,12 +1254,12 @@ $EndComp
 Text GLabel 5000 6100 1    60   Input ~ 0
 +BATT
 $Comp
-L CONN_01X02 P9
+L crazyfly2:CONN_01X02 P9
 U 1 1 5A8B0716
 P 4500 6300
 F 0 "P9" H 4500 6450 50  0000 C CNN
 F 1 "CONN_01X02" V 4600 6300 50  0000 C CNN
-F 2 "Connectors_JST:JST_GH_BM02B-GHS-TBT_02x1.25mm_Straight" H 4500 6300 50  0001 C CNN
+F 2 "roboy_crazyfly:JST-2-pin-female-side" H 4500 6300 50  0001 C CNN
 F 3 "" H 4500 6300 50  0000 C CNN
 	1    4500 6300
 	-1   0    0    1   
@@ -1305,17 +1267,13 @@ $EndComp
 Wire Wire Line
 	5000 6100 5000 6150
 Wire Wire Line
-	5000 6150 4700 6150
-Wire Wire Line
 	4700 6150 4700 6250
 Wire Wire Line
 	4700 6350 4700 6450
 Wire Wire Line
 	4700 6450 5000 6450
-Wire Wire Line
-	5000 6450 5000 6550
 $Comp
-L D_Schottky D4
+L device:D_Schottky D4
 U 1 1 5A8B0891
 P 6750 6300
 F 0 "D4" H 6750 6400 50  0000 C CNN
@@ -1328,12 +1286,12 @@ $EndComp
 Text GLabel 6750 6100 1    60   Input ~ 0
 +BATT
 $Comp
-L CONN_01X02 P10
+L crazyfly2:CONN_01X02 P10
 U 1 1 5A8B0898
 P 6250 6300
 F 0 "P10" H 6250 6450 50  0000 C CNN
 F 1 "CONN_01X02" V 6350 6300 50  0000 C CNN
-F 2 "Connectors_JST:JST_GH_BM02B-GHS-TBT_02x1.25mm_Straight" H 6250 6300 50  0001 C CNN
+F 2 "roboy_crazyfly:JST-2-pin-female-side" H 6250 6300 50  0001 C CNN
 F 3 "" H 6250 6300 50  0000 C CNN
 	1    6250 6300
 	-1   0    0    1   
@@ -1341,17 +1299,13 @@ $EndComp
 Wire Wire Line
 	6750 6100 6750 6150
 Wire Wire Line
-	6750 6150 6450 6150
-Wire Wire Line
 	6450 6150 6450 6250
 Wire Wire Line
 	6450 6350 6450 6450
 Wire Wire Line
 	6450 6450 6750 6450
-Wire Wire Line
-	6750 6450 6750 6550
 $Comp
-L R R26
+L device:R R26
 U 1 1 5A8B514D
 P 3150 7050
 F 0 "R26" V 3230 7050 50  0000 C CNN
@@ -1362,7 +1316,7 @@ F 3 "" H 3150 7050 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L R R25
+L device:R R25
 U 1 1 5A8B5283
 P 1400 7050
 F 0 "R25" V 1480 7050 50  0000 C CNN
@@ -1373,10 +1327,10 @@ F 3 "" H 1400 7050 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L R R?
+L device:R R29
 U 1 1 5A8B5BBF
 P 1150 6750
-F 0 "R?" V 1250 6750 50  0000 C CNN
+F 0 "R29" V 1250 6750 50  0000 C CNN
 F 1 "100k" V 1150 6750 50  0000 C CNN
 F 2 "Resistors_SMD:R_0402" V 1080 6750 50  0001 C CNN
 F 3 "" H 1150 6750 50  0000 C CNN
@@ -1384,10 +1338,10 @@ F 3 "" H 1150 6750 50  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L R R?
+L device:R R31
 U 1 1 5A8B5D0D
 P 4450 6750
-F 0 "R?" V 4550 6750 50  0000 C CNN
+F 0 "R31" V 4550 6750 50  0000 C CNN
 F 1 "100k" V 4450 6750 50  0000 C CNN
 F 2 "Resistors_SMD:R_0402" V 4380 6750 50  0001 C CNN
 F 3 "" H 4450 6750 50  0000 C CNN
@@ -1395,14 +1349,92 @@ F 3 "" H 4450 6750 50  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L R R?
+L device:R R32
 U 1 1 5A8B5E73
 P 6200 6750
-F 0 "R?" V 6300 6750 50  0000 C CNN
+F 0 "R32" V 6300 6750 50  0000 C CNN
 F 1 "100k" V 6200 6750 50  0000 C CNN
 F 2 "Resistors_SMD:R_0402" V 6130 6750 50  0001 C CNN
 F 3 "" H 6200 6750 50  0000 C CNN
 	1    6200 6750
 	0    1    1    0   
 $EndComp
+Wire Wire Line
+	3600 5300 3600 4850
+Wire Wire Line
+	3900 5300 4150 5300
+Wire Wire Line
+	4150 5300 4350 5300
+Wire Wire Line
+	4700 5000 4700 5100
+Wire Wire Line
+	4700 5100 4700 5200
+Wire Wire Line
+	4700 5200 4700 5400
+Wire Wire Line
+	4700 5400 4700 5550
+Wire Wire Line
+	7100 5250 7100 5350
+Wire Wire Line
+	7100 5350 7100 5550
+Wire Wire Line
+	8450 2100 8550 2100
+Wire Wire Line
+	9650 4200 10550 4200
+Wire Wire Line
+	8150 4900 8300 4900
+Wire Wire Line
+	8950 4900 9100 4900
+Wire Wire Line
+	1800 3300 1850 3300
+Wire Wire Line
+	2200 3300 2450 3300
+Wire Wire Line
+	1850 3300 2200 3300
+Wire Wire Line
+	1600 3300 1800 3300
+Wire Wire Line
+	1350 3300 1600 3300
+Wire Wire Line
+	1450 3850 1600 3850
+Wire Wire Line
+	2200 3850 2450 3850
+Wire Wire Line
+	1850 3850 2200 3850
+Wire Wire Line
+	1600 3850 1850 3850
+Wire Wire Line
+	1350 3850 1450 3850
+Wire Wire Line
+	1700 7250 1700 7350
+Wire Wire Line
+	3450 7250 3450 7350
+Wire Wire Line
+	5000 7250 5000 7350
+Wire Wire Line
+	6750 7250 6750 7350
+Wire Wire Line
+	1700 6550 1700 6450
+Connection ~ 1700 6450
+Wire Wire Line
+	3450 6550 3450 6450
+Connection ~ 3450 6450
+Wire Wire Line
+	5000 6550 5000 6450
+Connection ~ 5000 6450
+Wire Wire Line
+	6750 6550 6750 6450
+Connection ~ 6750 6450
+Wire Wire Line
+	6450 6150 6750 6150
+Connection ~ 6750 6150
+Wire Wire Line
+	4700 6150 5000 6150
+Connection ~ 5000 6150
+Wire Wire Line
+	3150 6150 3450 6150
+Connection ~ 3450 6150
+Wire Wire Line
+	1400 6150 1700 6150
+Connection ~ 1700 6150
 $EndSCHEMATC
