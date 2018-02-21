@@ -1423,12 +1423,12 @@ Wire Wire Line
 	1400 6150 1700 6150
 Connection ~ 1700 6150
 $Comp
-L Device:Crystal Y?
+L Device:Crystal Y1
 U 1 1 5A91E549
 P 3100 4050
-F 0 "Y?" V 3054 4181 50  0000 L CNN
+F 0 "Y1" V 3054 4181 50  0000 L CNN
 F 1 "Crystal" V 3145 4181 50  0000 L CNN
-F 2 "" H 3100 4050 50  0001 C CNN
+F 2 "roboy_crazyfly:CRYSTAL_8MHZ" H 3100 4050 50  0001 C CNN
 F 3 "~" H 3100 4050 50  0001 C CNN
 	1    3100 4050
 	0    1    1    0   

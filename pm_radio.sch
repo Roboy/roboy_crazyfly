@@ -174,17 +174,6 @@ F 3 "" H 7400 950 60  0001 C CNN
 	1    7400 950 
 	1    0    0    -1  
 $EndComp
-$Comp
-L roboy_crazyfly-rescue:R-device R23
-U 1 1 5A87715B
-P 6200 750
-F 0 "R23" V 6280 750 50  0000 C CNN
-F 1 "0" V 6200 750 50  0000 C CNN
-F 2 "Resistors_SMD:R_0402" V 6130 750 50  0001 C CNN
-F 3 "" H 6200 750 50  0000 C CNN
-	1    6200 750 
-	0    1    1    0   
-$EndComp
 Text GLabel 6650 650  2    60   Input ~ 0
 VFILT
 $Comp
@@ -299,8 +288,6 @@ Wire Wire Line
 	4750 1050 5250 1050
 Wire Wire Line
 	4750 750  5700 750 
-Wire Wire Line
-	6350 750  6500 750 
 Wire Wire Line
 	6650 650  6500 650 
 Wire Wire Line
@@ -1135,8 +1122,6 @@ Wire Wire Line
 Wire Wire Line
 	8300 750  8700 750 
 Wire Wire Line
-	5950 750  6050 750 
-Wire Wire Line
 	5700 750  5950 750 
 Wire Wire Line
 	5950 2550 5950 3500
@@ -1303,4 +1288,6 @@ Wire Wire Line
 Connection ~ 3050 5700
 Wire Wire Line
 	3050 5700 3050 6050
+Wire Wire Line
+	5950 750  6500 750 
 $EndSCHEMATC
