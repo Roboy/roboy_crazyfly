@@ -28,7 +28,7 @@ $EndComp
 Text HLabel 1200 750  0    60   Input ~ 0
 VUSB
 $Comp
-L device:C C15
+L roboy_crazyfly-rescue:C-device C15
 U 1 1 5A872A35
 P 1250 1300
 F 0 "C15" H 1275 1400 50  0000 L CNN
@@ -39,7 +39,7 @@ F 3 "" H 1250 1300 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L device:R R12
+L roboy_crazyfly-rescue:R-device R12
 U 1 1 5A872CE6
 P 1500 1050
 F 0 "R12" V 1580 1050 50  0000 C CNN
@@ -50,7 +50,7 @@ F 3 "" H 1500 1050 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L device:R R13
+L roboy_crazyfly-rescue:R-device R13
 U 1 1 5A872D46
 P 1500 1600
 F 0 "R13" V 1580 1600 50  0000 C CNN
@@ -65,7 +65,7 @@ GND
 Text Label 1800 1350 2    60   ~ 0
 VEN_D
 $Comp
-L device:R R17
+L roboy_crazyfly-rescue:R-device R17
 U 1 1 5A872EC9
 P 2200 1800
 F 0 "R17" V 2280 1800 50  0000 C CNN
@@ -76,7 +76,7 @@ F 3 "" H 2200 1800 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L device:R R18
+L roboy_crazyfly-rescue:R-device R18
 U 1 1 5A872F08
 P 2350 1800
 F 0 "R18" V 2430 1800 50  0000 C CNN
@@ -87,7 +87,7 @@ F 3 "" H 2350 1800 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L device:R R19
+L roboy_crazyfly-rescue:R-device R19
 U 1 1 5A872F2B
 P 2500 1800
 F 0 "R19" V 2580 1800 50  0000 C CNN
@@ -98,7 +98,7 @@ F 3 "" H 2500 1800 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L device:R R20
+L roboy_crazyfly-rescue:R-device R20
 U 1 1 5A872F4E
 P 2650 1800
 F 0 "R20" V 2730 1800 50  0000 C CNN
@@ -108,23 +108,12 @@ F 3 "" H 2650 1800 50  0000 C CNN
 	1    2650 1800
 	1    0    0    -1  
 $EndComp
-$Comp
-L device:C C20
-U 1 1 5A872F73
-P 3000 1800
-F 0 "C20" H 3025 1900 50  0000 L CNN
-F 1 "22u" H 3025 1700 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0402" H 3038 1650 50  0001 C CNN
-F 3 "" H 3000 1800 50  0000 C CNN
-	1    3000 1800
-	1    0    0    -1  
-$EndComp
 Text Label 1850 1150 0    60   ~ 0
 PM_ISET
 Text GLabel 3250 2200 3    60   Input ~ 0
 GND
 Text GLabel 3000 1500 0    60   Input ~ 0
-+BAT
++BATT
 Text GLabel 4850 2000 3    60   Input ~ 0
 GND
 Text Notes 3050 2350 2    60   ~ 0
@@ -186,7 +175,7 @@ F 3 "" H 7400 950 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L device:R R23
+L roboy_crazyfly-rescue:R-device R23
 U 1 1 5A87715B
 P 6200 750
 F 0 "R23" V 6280 750 50  0000 C CNN
@@ -199,7 +188,7 @@ $EndComp
 Text GLabel 6650 650  2    60   Input ~ 0
 VFILT
 $Comp
-L device:C C34
+L roboy_crazyfly-rescue:C-device C34
 U 1 1 5A8772C1
 P 6500 1200
 F 0 "C34" H 6525 1300 50  0000 L CNN
@@ -214,7 +203,7 @@ GND
 Text GLabel 8300 1550 3    60   Input ~ 0
 GND
 $Comp
-L device:C C35
+L roboy_crazyfly-rescue:C-device C35
 U 1 1 5A8774DE
 P 8300 1200
 F 0 "C35" H 8325 1300 50  0000 L CNN
@@ -359,7 +348,7 @@ Connection ~ 6800 3400
 Text Label 6300 3400 0    60   ~ 0
 VEN_D
 $Comp
-L device:C C24
+L roboy_crazyfly-rescue:C-device C24
 U 1 1 5A8783EA
 P 6300 2800
 F 0 "C24" H 6325 2900 50  0000 L CNN
@@ -396,7 +385,7 @@ Wire Wire Line
 Text GLabel 8650 3250 2    60   Input ~ 0
 GND
 $Comp
-L device:C C29
+L roboy_crazyfly-rescue:C-device C29
 U 1 1 5A878BE5
 P 8250 3000
 F 0 "C29" H 8275 3100 50  0000 L CNN
@@ -407,7 +396,7 @@ F 3 "" H 8250 3000 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L device:C C31
+L roboy_crazyfly-rescue:C-device C31
 U 1 1 5A878C6B
 P 8500 3000
 F 0 "C31" H 8525 3100 50  0000 L CNN
@@ -451,7 +440,7 @@ F 3 "" H 8800 2550 50  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L device:C C32
+L roboy_crazyfly-rescue:C-device C32
 U 1 1 5A87901B
 P 9500 2950
 F 0 "C32" H 9525 3050 50  0000 L CNN
@@ -479,7 +468,7 @@ Filter the power supply at 73kHz\nshould filter most of the PWM\nL1 shall suppor
 Text Notes 11100 2900 2    60   ~ 0
 Analog power only used by IMU.\nInductance and capacitor placed\nnear IMU
 $Comp
-L device:C C33
+L roboy_crazyfly-rescue:C-device C33
 U 1 1 5A87A02B
 P 9550 4350
 F 0 "C33" H 9575 4450 50  0000 L CNN
@@ -560,7 +549,7 @@ Wire Wire Line
 	9200 5800 9350 5800
 Connection ~ 9350 5800
 $Comp
-L device:C C26
+L roboy_crazyfly-rescue:C-device C26
 U 1 1 5A87C56B
 P 7250 5700
 F 0 "C26" H 7275 5800 50  0000 L CNN
@@ -571,7 +560,7 @@ F 3 "" H 7250 5700 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L device:C C27
+L roboy_crazyfly-rescue:C-device C27
 U 1 1 5A87C606
 P 7500 5700
 F 0 "C27" H 7525 5800 50  0000 L CNN
@@ -582,7 +571,7 @@ F 3 "" H 7500 5700 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L device:C C28
+L roboy_crazyfly-rescue:C-device C28
 U 1 1 5A87C653
 P 7750 5700
 F 0 "C28" H 7775 5800 50  0000 L CNN
@@ -648,7 +637,7 @@ Connection ~ 4800 5750
 Text GLabel 5150 5800 3    60   Input ~ 0
 GND
 $Comp
-L device:C C21
+L roboy_crazyfly-rescue:C-device C21
 U 1 1 5A87DD95
 P 5000 5500
 F 0 "C21" H 5025 5600 50  0000 L CNN
@@ -659,7 +648,7 @@ F 3 "" H 5000 5500 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L device:C C22
+L roboy_crazyfly-rescue:C-device C22
 U 1 1 5A87DDE6
 P 5250 5500
 F 0 "C22" H 5275 5600 50  0000 L CNN
@@ -687,7 +676,7 @@ Wire Wire Line
 	5150 5700 5150 5800
 Connection ~ 5150 5700
 $Comp
-L device:C C23
+L roboy_crazyfly-rescue:C-device C23
 U 1 1 5A87E861
 P 5900 5550
 F 0 "C23" H 5925 5650 50  0000 L CNN
@@ -700,7 +689,7 @@ $EndComp
 Text GLabel 5900 5850 3    60   Input ~ 0
 GND
 $Comp
-L device:R R24
+L roboy_crazyfly-rescue:R-device R24
 U 1 1 5A87E903
 P 6250 5350
 F 0 "R24" V 6330 5350 50  0000 C CNN
@@ -757,7 +746,7 @@ Wire Wire Line
 Text HLabel 5450 3800 2    60   BiDi ~ 0
 STM_SWIO
 $Comp
-L device:R R22
+L roboy_crazyfly-rescue:R-device R22
 U 1 1 5A883124
 P 4900 3900
 F 0 "R22" V 4980 3900 50  0000 C CNN
@@ -789,7 +778,7 @@ Wire Wire Line
 Wire Wire Line
 	4600 3300 4750 3300
 $Comp
-L device:R R21
+L roboy_crazyfly-rescue:R-device R21
 U 1 1 5A88469A
 P 4900 3300
 F 0 "R21" V 4980 3300 50  0000 C CNN
@@ -812,7 +801,7 @@ SWITCH
 Text GLabel 1200 3300 0    60   Input ~ 0
 +BATT
 $Comp
-L device:R R11
+L roboy_crazyfly-rescue:R-device R11
 U 1 1 5A887560
 P 1450 3300
 F 0 "R11" V 1530 3300 50  0000 C CNN
@@ -825,7 +814,7 @@ $EndComp
 Wire Wire Line
 	1200 3300 1300 3300
 $Comp
-L device:R R16
+L roboy_crazyfly-rescue:R-device R16
 U 1 1 5A888108
 P 2000 3300
 F 0 "R16" V 2080 3300 50  0000 C CNN
@@ -836,7 +825,7 @@ F 3 "" H 2000 3300 50  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L device:C C19
+L roboy_crazyfly-rescue:C-device C19
 U 1 1 5A8881C0
 P 2000 3550
 F 0 "C19" H 2025 3650 50  0000 L CNN
@@ -877,7 +866,7 @@ Wire Wire Line
 Wire Wire Line
 	3100 3900 1700 3900
 $Comp
-L device:R R15
+L roboy_crazyfly-rescue:R-device R15
 U 1 1 5A8894F5
 P 1950 4000
 F 0 "R15" V 2030 4000 50  0000 C CNN
@@ -913,7 +902,7 @@ Wire Wire Line
 Text GLabel 1000 5150 0    60   Input ~ 0
 VCCNRF
 $Comp
-L device:C C16
+L roboy_crazyfly-rescue:C-device C16
 U 1 1 5A88B0C8
 P 1100 5400
 F 0 "C16" H 1125 5500 50  0000 L CNN
@@ -924,7 +913,7 @@ F 3 "" H 1100 5400 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L device:C C17
+L roboy_crazyfly-rescue:C-device C17
 U 1 1 5A88B12F
 P 1350 5400
 F 0 "C17" H 1375 5500 50  0000 L CNN
@@ -935,7 +924,7 @@ F 3 "" H 1350 5400 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L device:C C18
+L roboy_crazyfly-rescue:C-device C18
 U 1 1 5A88B225
 P 1600 5400
 F 0 "C18" H 1625 5500 50  0000 L CNN
@@ -983,7 +972,7 @@ F 3 "" H 2400 7350 50  0000 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L device:R R14
+L roboy_crazyfly-rescue:R-device R14
 U 1 1 5A88D476
 P 1800 7350
 F 0 "R14" V 1880 7350 50  0000 C CNN
@@ -1086,7 +1075,7 @@ Wire Wire Line
 Wire Wire Line
 	2900 5150 2900 5200
 $Comp
-L device:C C25
+L roboy_crazyfly-rescue:C-device C25
 U 1 1 5A889BFE
 P 2000 5350
 F 0 "C25" H 2025 5450 50  0000 L CNN
@@ -1097,7 +1086,7 @@ F 3 "" H 2000 5350 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L device:C C30
+L roboy_crazyfly-rescue:C-device C30
 U 1 1 5A889C8F
 P 2900 5350
 F 0 "C30" H 2925 5450 50  0000 L CNN
@@ -1277,4 +1266,19 @@ Wire Wire Line
 	6700 5050 6700 5250
 Wire Wire Line
 	5900 5250 6700 5250
+$Comp
+L roboy_crazyfly-rescue:CP1-device C20
+U 1 1 5AA6AC37
+P 3000 1800
+F 0 "C20" H 3115 1846 50  0000 L CNN
+F 1 "22uF" H 3115 1755 50  0000 L CNN
+F 2 "roboy_crazyfly:22uF-elektrolyt-kondensator" H 3000 1800 50  0001 C CNN
+F 3 "" H 3000 1800 50  0001 C CNN
+	1    3000 1800
+	1    0    0    -1  
+$EndComp
+Text Label 4600 4850 0    50   ~ 0
+ANT-
+Text Label 4600 4950 0    50   ~ 0
+ANT+
 $EndSCHEMATC

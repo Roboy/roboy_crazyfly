@@ -28,7 +28,7 @@ $EndComp
 Text GLabel 3600 5450 3    60   Input ~ 0
 GND
 $Comp
-L device:C C7
+L roboy_crazyfly-rescue:C-device C7
 U 1 1 5A85B7A4
 P 3600 4700
 F 0 "C7" H 3625 4800 50  0000 L CNN
@@ -39,7 +39,7 @@ F 3 "" H 3600 4700 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L device:R R1
+L roboy_crazyfly-rescue:R-device R1
 U 1 1 5A85B7E9
 P 3900 4700
 F 0 "R1" V 3980 4700 50  0000 C CNN
@@ -50,7 +50,7 @@ F 3 "" H 3900 4700 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L device:C C8
+L roboy_crazyfly-rescue:C-device C8
 U 1 1 5A85B8C5
 P 4150 4700
 F 0 "C8" H 4175 4800 50  0000 L CNN
@@ -61,7 +61,7 @@ F 3 "" H 4150 4700 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L device:C C9
+L roboy_crazyfly-rescue:C-device C9
 U 1 1 5A85B920
 P 4350 4700
 F 0 "C9" H 4375 4800 50  0000 L CNN
@@ -212,17 +212,6 @@ Wire Wire Line
 	4800 3550 4400 3550
 Wire Wire Line
 	4800 3800 4400 3800
-$Comp
-L roboy_crazyfly-rescue:CRYSTAL_SMD-RESCUE-roboy_crazyfly X1
-U 1 1 5A85D36A
-P 3100 4100
-F 0 "X1" H 3100 4190 50  0000 C CNN
-F 1 "8MHz" H 3130 3990 50  0000 L CNN
-F 2 "roboy_crazyfly:SMD_CRYSTALL_8MHz" H 3100 4100 50  0001 C CNN
-F 3 "" H 3100 4100 50  0000 C CNN
-	1    3100 4100
-	0    1    1    0   
-$EndComp
 Wire Wire Line
 	4800 3950 3400 3950
 Wire Wire Line
@@ -235,10 +224,6 @@ Wire Wire Line
 	3400 4300 3400 4050
 Wire Wire Line
 	3400 4050 4800 4050
-Text GLabel 2850 4100 0    60   Input ~ 0
-GND
-Wire Wire Line
-	3000 4100 2850 4100
 Text Label 4400 3800 2    60   ~ 0
 LED_BLUE_L
 Text Label 4400 3550 2    60   ~ 0
@@ -362,7 +347,7 @@ $EndSheet
 Text GLabel 8450 2000 1    60   Input ~ 0
 VCC
 $Comp
-L device:R R4
+L roboy_crazyfly-rescue:R-device R4
 U 1 1 5A85FE8C
 P 8300 2400
 F 0 "R4" V 8380 2400 50  0000 C CNN
@@ -373,7 +358,7 @@ F 3 "" H 8300 2400 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L device:R R6
+L roboy_crazyfly-rescue:R-device R6
 U 1 1 5A85FF18
 P 8550 2400
 F 0 "R6" V 8630 2400 50  0000 C CNN
@@ -487,7 +472,7 @@ Wire Wire Line
 Wire Wire Line
 	9650 4500 10550 4500
 $Comp
-L device:R R10
+L roboy_crazyfly-rescue:R-device R10
 U 1 1 5A862622
 P 9650 4350
 F 0 "R10" V 9730 4350 50  0000 C CNN
@@ -498,7 +483,7 @@ F 3 "" H 9650 4350 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L device:R R9
+L roboy_crazyfly-rescue:R-device R9
 U 1 1 5A8626A9
 P 9500 4450
 F 0 "R9" V 9580 4450 50  0000 C CNN
@@ -647,7 +632,7 @@ VCC
 Text GLabel 7550 6100 3    60   Input ~ 0
 GDN
 $Comp
-L device:R R2
+L roboy_crazyfly-rescue:R-device R2
 U 1 1 5A865527
 P 7550 5450
 F 0 "R2" V 7630 5450 50  0000 C CNN
@@ -658,7 +643,7 @@ F 3 "" H 7550 5450 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L device:R R3
+L roboy_crazyfly-rescue:R-device R3
 U 1 1 5A8655E5
 P 8000 5650
 F 0 "R3" V 8080 5650 50  0000 C CNN
@@ -669,7 +654,7 @@ F 3 "" H 8000 5650 50  0000 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L device:R R5
+L roboy_crazyfly-rescue:R-device R5
 U 1 1 5A865770
 P 8300 5650
 F 0 "R5" V 8380 5650 50  0000 C CNN
@@ -680,7 +665,7 @@ F 3 "" H 8300 5650 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L device:R R7
+L roboy_crazyfly-rescue:R-device R7
 U 1 1 5A86584A
 P 8800 5650
 F 0 "R7" V 8880 5650 50  0000 C CNN
@@ -691,7 +676,7 @@ F 3 "" H 8800 5650 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L device:R R8
+L roboy_crazyfly-rescue:R-device R8
 U 1 1 5A86590E
 P 9100 5650
 F 0 "R8" V 9180 5650 50  0000 C CNN
@@ -779,7 +764,7 @@ U 1 1 5A8680FD
 P 800 2500
 F 0 "P1" H 900 2650 60  0000 C CNN
 F 1 "MICRO_B_USB" V 800 2200 60  0000 C CNN
-F 2 "Connect:USB_Mini-B" H 800 2500 60  0001 C CNN
+F 2 "Connectors_USB:USB_Micro-B_Molex_47346-0001" H 800 2500 60  0001 C CNN
 F 3 "" H 800 2500 60  0001 C CNN
 	1    800  2500
 	1    0    0    -1  
@@ -861,7 +846,7 @@ Wire Wire Line
 Text GLabel 1250 3000 2    60   Input ~ 0
 GND
 $Comp
-L device:C C1
+L roboy_crazyfly-rescue:C-device C1
 U 1 1 5A86B0BA
 P 1100 3550
 F 0 "C1" H 1125 3650 50  0000 L CNN
@@ -872,7 +857,7 @@ F 3 "" H 1100 3550 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L device:C C2
+L roboy_crazyfly-rescue:C-device C2
 U 1 1 5A86B1B2
 P 1350 3550
 F 0 "C2" H 1375 3650 50  0000 L CNN
@@ -883,7 +868,7 @@ F 3 "" H 1350 3550 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L device:C C3
+L roboy_crazyfly-rescue:C-device C3
 U 1 1 5A86B282
 P 1600 3550
 F 0 "C3" H 1625 3650 50  0000 L CNN
@@ -894,7 +879,7 @@ F 3 "" H 1600 3550 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L device:C C4
+L roboy_crazyfly-rescue:C-device C4
 U 1 1 5A86B348
 P 1850 3550
 F 0 "C4" H 1875 3650 50  0000 L CNN
@@ -905,7 +890,7 @@ F 3 "" H 1850 3550 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L device:C C5
+L roboy_crazyfly-rescue:C-device C5
 U 1 1 5A86B433
 P 2200 3550
 F 0 "C5" H 2225 3650 50  0000 L CNN
@@ -916,7 +901,7 @@ F 3 "" H 2200 3550 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L device:C C6
+L roboy_crazyfly-rescue:C-device C6
 U 1 1 5A86B525
 P 2450 3550
 F 0 "C6" H 2475 3650 50  0000 L CNN
@@ -975,7 +960,7 @@ Connection ~ 1350 3850
 Text Notes 2900 3250 2    60   ~ 0
 U1 decoupling:\n100n on each VDD\n10n and 4.7u on VDDA
 $Comp
-L device:D_Schottky D1
+L roboy_crazyfly-rescue:D_Schottky-device D1
 U 1 1 5A86C17D
 P 1700 6300
 F 0 "D1" H 1700 6400 50  0000 C CNN
@@ -986,7 +971,7 @@ F 3 "" H 1700 6300 50  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L device:Q_NMOS_SGD Q1
+L roboy_crazyfly-rescue:Q_NMOS_SGD-device Q1
 U 1 1 5A88D187
 P 1600 6750
 F 0 "Q1" H 1900 6800 50  0000 R CNN
@@ -1016,7 +1001,7 @@ Wire Wire Line
 Text Label 500  6750 0    60   ~ 0
 MOTOR1
 $Comp
-L device:R R30
+L roboy_crazyfly-rescue:R-device R30
 U 1 1 5A8927AB
 P 2900 6750
 F 0 "R30" V 3000 6750 50  0000 C CNN
@@ -1027,7 +1012,7 @@ F 3 "" H 2900 6750 50  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L device:Q_NMOS_SGD Q2
+L roboy_crazyfly-rescue:Q_NMOS_SGD-device Q2
 U 1 1 5A8927B7
 P 3350 6750
 F 0 "Q2" H 3650 6800 50  0000 R CNN
@@ -1055,7 +1040,7 @@ Wire Wire Line
 Text Label 2250 6750 0    60   ~ 0
 MOTOR2
 $Comp
-L device:R R27
+L roboy_crazyfly-rescue:R-device R27
 U 1 1 5A89389B
 P 4700 7050
 F 0 "R27" V 4780 7050 50  0000 C CNN
@@ -1066,7 +1051,7 @@ F 3 "" H 4700 7050 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L device:Q_NMOS_SGD Q3
+L roboy_crazyfly-rescue:Q_NMOS_SGD-device Q3
 U 1 1 5A8938A1
 P 4900 6750
 F 0 "Q3" H 5200 6800 50  0000 R CNN
@@ -1094,7 +1079,7 @@ Wire Wire Line
 Text Label 3800 6750 0    60   ~ 0
 MOTOR3
 $Comp
-L device:R R28
+L roboy_crazyfly-rescue:R-device R28
 U 1 1 5A8938BD
 P 6450 7050
 F 0 "R28" V 6530 7050 50  0000 C CNN
@@ -1105,7 +1090,7 @@ F 3 "" H 6450 7050 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L device:Q_NMOS_SGD Q4
+L roboy_crazyfly-rescue:Q_NMOS_SGD-device Q4
 U 1 1 5A8938C3
 P 6650 6750
 F 0 "Q4" H 6950 6800 50  0000 R CNN
@@ -1209,7 +1194,7 @@ Wire Wire Line
 Wire Wire Line
 	1400 6450 1700 6450
 $Comp
-L device:D_Schottky D2
+L roboy_crazyfly-rescue:D_Schottky-device D2
 U 1 1 5A8AEEEB
 P 3450 6300
 F 0 "D2" H 3450 6400 50  0000 C CNN
@@ -1241,7 +1226,7 @@ Wire Wire Line
 Wire Wire Line
 	3150 6450 3450 6450
 $Comp
-L device:D_Schottky D3
+L roboy_crazyfly-rescue:D_Schottky-device D3
 U 1 1 5A8B070F
 P 5000 6300
 F 0 "D3" H 5000 6400 50  0000 C CNN
@@ -1273,7 +1258,7 @@ Wire Wire Line
 Wire Wire Line
 	4700 6450 5000 6450
 $Comp
-L device:D_Schottky D4
+L roboy_crazyfly-rescue:D_Schottky-device D4
 U 1 1 5A8B0891
 P 6750 6300
 F 0 "D4" H 6750 6400 50  0000 C CNN
@@ -1305,7 +1290,7 @@ Wire Wire Line
 Wire Wire Line
 	6450 6450 6750 6450
 $Comp
-L device:R R26
+L roboy_crazyfly-rescue:R-device R26
 U 1 1 5A8B514D
 P 3150 7050
 F 0 "R26" V 3230 7050 50  0000 C CNN
@@ -1316,7 +1301,7 @@ F 3 "" H 3150 7050 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L device:R R25
+L roboy_crazyfly-rescue:R-device R25
 U 1 1 5A8B5283
 P 1400 7050
 F 0 "R25" V 1480 7050 50  0000 C CNN
@@ -1327,7 +1312,7 @@ F 3 "" H 1400 7050 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L device:R R29
+L roboy_crazyfly-rescue:R-device R29
 U 1 1 5A8B5BBF
 P 1150 6750
 F 0 "R29" V 1250 6750 50  0000 C CNN
@@ -1338,7 +1323,7 @@ F 3 "" H 1150 6750 50  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L device:R R31
+L roboy_crazyfly-rescue:R-device R31
 U 1 1 5A8B5D0D
 P 4450 6750
 F 0 "R31" V 4550 6750 50  0000 C CNN
@@ -1349,7 +1334,7 @@ F 3 "" H 4450 6750 50  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L device:R R32
+L roboy_crazyfly-rescue:R-device R32
 U 1 1 5A8B5E73
 P 6200 6750
 F 0 "R32" V 6300 6750 50  0000 C CNN
@@ -1437,4 +1422,17 @@ Connection ~ 3450 6150
 Wire Wire Line
 	1400 6150 1700 6150
 Connection ~ 1700 6150
+$Comp
+L Device:Crystal Y1
+U 1 1 5A91E549
+P 3100 4050
+F 0 "Y1" V 3054 4181 50  0000 L CNN
+F 1 "Crystal" V 3145 4181 50  0000 L CNN
+F 2 "roboy_crazyfly:CRYSTAL_8MHZ" H 3100 4050 50  0001 C CNN
+F 3 "~" H 3100 4050 50  0001 C CNN
+	1    3100 4050
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3100 4200 3100 4300
 $EndSCHEMATC

@@ -34,7 +34,7 @@ Wire Wire Line
 Wire Wire Line
 	5250 1850 4700 1850
 $Comp
-L device:C C10
+L roboy_crazyfly-rescue:C-device C10
 U 1 1 5A870B2D
 P 4300 2700
 F 0 "C10" H 4325 2800 50  0000 L CNN
@@ -45,7 +45,7 @@ F 3 "" H 4300 2700 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L device:C C12
+L roboy_crazyfly-rescue:C-device C12
 U 1 1 5A870BBD
 P 4550 2700
 F 0 "C12" H 4575 2800 50  0000 L CNN
@@ -56,7 +56,7 @@ F 3 "" H 4550 2700 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L device:C C14
+L roboy_crazyfly-rescue:C-device C14
 U 1 1 5A870BE5
 P 4800 2700
 F 0 "C14" H 4825 2800 50  0000 L CNN
@@ -168,7 +168,7 @@ Wire Wire Line
 Wire Wire Line
 	5000 4400 5200 4400
 $Comp
-L device:C C11
+L roboy_crazyfly-rescue:C-device C11
 U 1 1 5A871C66
 P 4450 5050
 F 0 "C11" H 4475 5150 50  0000 L CNN
@@ -179,7 +179,7 @@ F 3 "" H 4450 5050 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L device:C C13
+L roboy_crazyfly-rescue:C-device C13
 U 1 1 5A871CB6
 P 4700 5050
 F 0 "C13" H 4725 5150 50  0000 L CNN
